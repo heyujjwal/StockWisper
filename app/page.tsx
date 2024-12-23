@@ -1,5 +1,5 @@
 import DashboardCard from "@/components/Dashboard/DashboardCard";
-import { Newspaper,Folder, User,MessageCircle } from "lucide-react";
+import { Newspaper,Folder, User,MessageCircle } from "lucide-react"
 import AnalyticsCharts from "@/components/Dashboard/AnalyticsCharts";
 export default function Home() {
   return (
