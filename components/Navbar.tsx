@@ -10,19 +10,20 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
-
+import { ModeToggle } from "./ThemeToggler";
   
 const Navbar = () => {
     return (  
-        <div className="bg-primary dark:bg-slate-700 text-white py-2 px-5 flex justify-between">
+        <div className="bg-primary dark:bg-slate-900 text-white py-2 px-5 flex justify-between">
             <Link href='/'>
                 <Image src={Logo} alt="StocksWisper" width={40}/> 
                 
             </Link>
             <h2 className="text-xl py-2">StocksWisper</h2>
             
-
-            {/* DropDown */}
+            <div className="flex item-center">
+                <ModeToggle/>
+                {/* DropDown */}
 
             <DropdownMenu>
             <DropdownMenuTrigger>
@@ -44,6 +45,11 @@ const Navbar = () => {
                 </DropdownMenuItem>
             </DropdownMenuContent>
             </DropdownMenu>
+
+
+            </div>
+
+            
 
 
         </div>
