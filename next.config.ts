@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
 const path = require('path');
 
 module.exports = {
-  distDir: path.join('custom_build'),
+  distDir: '.next', // Ensure it is set correctly
 };
+
 
 export default nextConfig;
